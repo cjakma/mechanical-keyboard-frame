@@ -25,6 +25,7 @@ the updated model as an `.STL` file
 All exported `.STL` files were sliced using [Cura](https://ultimaker.com/en/products/cura-software).
 
 The following settings were used:
+
 * Quality
     * Layer Height: 0.1 mm
 * Shell
