@@ -6,8 +6,8 @@ wallPoints = [
     [125,0,0],
     [125,99.5,0],
     [0,99.5,0],
-    [0,0,8.75],
-    [125,0,8.75],
+    [0,0,9.25],
+    [125,0,9.25],
     [125,99.5,15.5],
     [0,99.5,15.5]
 ];
@@ -29,8 +29,8 @@ wallFaces = [
  */
 difference() {
     polyhedron(wallPoints, wallFaces);
-    translate([0,2.5,0]) {
-        cube([122.5,94.5,16]);
+    translate([0,1.75,0]) {
+        cube([122.5,95.25,16]);
     }
 }
 
@@ -41,7 +41,7 @@ raftScrewHoleRadius = 1.5;
 screwHoleOffset = 4.75;
 
 // Create four rafts (one in each corner) that will be used to secure this part to the steel plate
-translate([0,2.5,0]) {
+translate([0,1.75,0]) {
     difference() {
         cube([raftSideLength,raftSideLength,raftHeight]);
         translate([screwHoleOffset,screwHoleOffset,0]) {
@@ -50,7 +50,7 @@ translate([0,2.5,0]) {
     }
 }
 
-translate([112.5,2.5,0]) {
+translate([112.5,1.75,0]) {
     difference() {
         cube([raftSideLength,raftSideLength,raftHeight]);
         translate([screwHoleOffset,screwHoleOffset,0]) {
